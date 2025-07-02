@@ -5,11 +5,11 @@
 class Audiofile < Formula
   desc ""
   homepage "https://github.com/lcastrooliveira"
-  version "0.4"
+  version "0.5"
 
   on_macos do
-    url "https://github.com/lcastrooliveira/audiofile/releases/download/v0.4/audiofile_Darwin_all.tar.gz"
-    sha256 "e64ebf0ad6908f788194f003c88352db429f11c02a6be64b5079fe55396d18e5"
+    url "https://github.com/lcastrooliveira/audiofile/releases/download/v0.5/audiofile_Darwin_all.tar.gz"
+    sha256 "54d059be1efee9aedf541cdeee52065eae1f83ea42a3a22d5d7abca68d79fd14"
 
     def install
       bin.install "audiofile"
@@ -18,15 +18,15 @@ class Audiofile < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/lcastrooliveira/audiofile/releases/download/v0.4/audiofile_Linux_x86_64.tar.gz"
-      sha256 "4892eac18bba056aa5d621dff0cba1e72d5c4a50571940da626c3de377988f3c"
+      url "https://github.com/lcastrooliveira/audiofile/releases/download/v0.5/audiofile_Linux_x86_64.tar.gz"
+      sha256 "1043e880db19ee8b58e14ba4594b02a5257924c9c92a0ad5c9b868aa99bd947b"
       def install
         bin.install "audiofile"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/lcastrooliveira/audiofile/releases/download/v0.4/audiofile_Linux_arm64.tar.gz"
-      sha256 "8fb7409da947f0499d16e91fc39e534d7524641bf2d7fe4c36daa29bbb160530"
+      url "https://github.com/lcastrooliveira/audiofile/releases/download/v0.5/audiofile_Linux_arm64.tar.gz"
+      sha256 "bb93608b0b0300e947a35581aed85400f269c92405d8a31d3450fc4f33ac428c"
       def install
         bin.install "audiofile"
       end
